@@ -1,0 +1,26 @@
+{
+  "name": "agent-sandbox-skill",
+  "sync": {
+    "github": {
+      "enabled": true,
+      "repo": "disler/agent-sandbox-skill",
+      "remote": "origin",
+      "branch": "main"
+    },
+    "local": {
+      "enabled": true,
+      "path": "/Users/arnaudassoumani/SOCA/agent-sandbox-skill",
+      "watch_patterns": ["*.md", "*.py", "*.json", "prompts/*", "AGENTS.md", "CLAUDE.md", "GEMINI.md"]
+    },
+    "supabase": {
+      "enabled": true,
+      "project": "agent-sandbox-skill",
+      "table": "repo_sync",
+      "sync_metadata": true,
+      "sync_files": true
+    }
+  },
+  "sync_interval_seconds": 300,
+  "conflict_resolution": "timestamp",
+  "last_sync": null
+}
